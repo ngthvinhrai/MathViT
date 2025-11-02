@@ -1,0 +1,94 @@
+[
+    {
+        "input": "Khái niệm: Số tự nhiên.",
+        "output": "Định nghĩa: 'Số tự nhiên là tập hợp những số lớn hơn hoặc bằng 0. Chúng bao gồm các số như 0, 1, 2, 3, và tiếp tục vô hạn về phía dương.'. Để viết số tự nhiên người ta dùng 10 chữ số: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, các chữ số đều nhỏ hơn 10. 0 là số tự nhiên nhỏ nhất, không có số tự nhiên nhỏ nhất. Các số lẻ có chữ số hàng đơn vị là: 1, 3, 5, 7, 9. Dãy các số lẻ là: 1, 3, 5, 7, 9, 11, 13, 15, 17, ...Các số chẵn có chữ số ở hàng đơn vị là: 0, 2, 4, 6, 8. Dãy các số chẵn là: 2, 4, 6, 8, 10, 12, 14, 16, ... Hai số tự nhiên liên tiếp chúng hơn, kém nhau 1 đơn vị. Hai số chẵn (lẻ) liên tiếp chúng hơn kém nhau 2 đơn vị. Số có 1 chữ số (từ 0 đến 9), có: 10 số. Số có 2 chữ số (từ 10 đến 99), có: 90 số. Số có 3 chữ số (từ 100 đến 999), có: 900 số. Số có 4 chữ số (từ 1000 đến 9999), có: 9000 số... Trong dãy số tự nhiên liên tiếp, cứ một số lẻ thì đến một số chẵn, rồi lẻ, rồi chẵn, ...Nếu dãy số tự nhiên liên tiếp bắt đầu từ số lẻ mà kết thúc là số chẵn thì số số hạng của dãy là một số chẵn. Còn nếu bắt đầu và kết thúc là 2 số cùng chẵn (hoặc cùng lẻ) thì số số hạng của dãy là một số lẻ."
+    },
+    {
+        "input": "Khái niệm: Hàng đơn vị, hàng chục, hàng trăm.",
+        "output": "Định nghĩa: 'Trong hệ thập phân, mỗi chữ số trong một số có giá trị tùy thuộc vào vị trí của nó. Hàng đơn vị là vị trí bên phải nhất, hàng chục là vị trí thứ hai từ bên phải, và hàng trăm là vị trí thứ ba từ bên phải.'. Ví dụ: 'Trong số 345, chữ số 5 ở hàng đơn vị, chữ số 4 ở hàng chục, và chữ số 3 ở hàng trăm.'"
+    },
+    {
+        "input": "Phép tính: Phép cộng.",
+        "output": "Ký hiệu: '+'. Định nghĩa: 'a + b = c, trong đó a và b là các số hạng, c là tổng.'. Ví dụ: '3 + 6 = 9, 1 + 8 = 9' Tính chất: '1) Giao hoán: a + b = b + a. 2) Kết hợp: (a + b) + c = a + (b + c). 3) Tính chất của số 0: a + 0 = a.'"
+    },
+    {
+        "input": "Phép tính: Phép trừ.",
+        "output": "Ký hiệu: '-'. Định nghĩa: 'a - b = c, trong đó a là số bị trừ, b là số trừ, c là hiệu.'. Ví dụ: '9 - 4 = 5, 7 - 2 = 5' Tính chất: '1) Không giao hoán: a - b ≠ b - a. 2) Không kết hợp: (a - b) - c ≠ a - (b - c). 3) Tính chất của số 0: a - 0 = a.'"
+    },
+    {
+        "input": "Phép tính: Phép nhân.",
+        "output": "Ký hiệu: 'x'. Định nghĩa: 'a x b = c, trong đó a và b là các thừa số, c là tích.'. Ví dụ: '3 x 4 = 12, 5 x 6 = 30' Tính chất: '1) Giao hoán: a x b = b x a. 2) Kết hợp: (a x b) x c = a x (b x c). 3) Tính chất của số 1: a x 1 = a. 4) Tính chất phân phối: a x (b + c) = a x b + a x c.'"
+    },
+    {
+        "input": "Phép tính: Phép chia.",
+        "output": "Ký hiệu: ':'. Định nghĩa: 'a : b = c, trong đó a là số bị chia, b là số chia (b ≠ 0), c là thương.'. Ví dụ: '12 : 4 = 3, 20 ÷ 5 = 4' Tính chất: '1) Không giao hoán: a : b ≠ b : a. 2) Không kết hợp: (a : b) : c ≠ a : (b : c). 3) Tính chất của số 1: a : 1 = a.'"
+    },
+    {
+        "input": "Quy tắc: Dấu hiệu chia hết.",
+        "output": "Chia hết cho 2: Chữ số hàng đơn vị là 0, 2, 4, 6, 8. Chia hết cho 3: Tổng các chữ số chia hết cho 3. Chia hết cho 5: Chữ số hàng đơn vị là 0 hoặc 5. Chia hết cho 9: Tổng các chữ số chia hết cho 9. Chia hết cho 10: Chữ số hàng đơn vị là 0. Chia hết cho 4: Hai chữ số tận cùng tạo thành số chia hết cho 4. Chia hết cho 8: Ba chữ số tận cùng tạo thành số chia hết cho 8. Chia hết cho 6: Vừa chia hết cho 2 vừa chia hết cho 3."
+    },
+    {
+        "input": "Quy tắc: Cộng không nhớ.",
+        "output": "Phép cộng không nhớ là phép cộng mà tổng các chữ số ở từng hàng (đơn vị, chục,...) không vượt quá 9, nên không cần 'nhớ' sang hàng tiếp theo. Quy tắc thực hiện: 'Cộng từng hàng từ phải sang trái (bắt đầu từ hàng đơn vị). Nếu tổng nhỏ hơn hoặc bằng 9 thì ghi kết quả ngay tại hàng đó. Không cần chuyển số sang hàng kế tiếp.'. Ví dụ: 23 + 45 = 68 (tổng các chữ số hàng đơn vị là 3 + 5 = 8, tổng các chữ số hàng chục là 2 + 4 = 6)."
+    },
+    {
+        "input": "Quy tắc: Cộng có nhớ.",
+        "output": "Phép cộng có nhớ là phép cộng mà tổng các chữ số ở từng hàng vượt quá 9, phải 'nhớ 1 đơn vị sang hàng kế tiếp. Quy tắc thực hiện: 'Cộng từng hàng từ phải sang trái (bắt đầu từ hàng đơn vị). Nếu tổng lớn hơn 9 thì ghi chữ số hàng đơn vị của tổng tại hàng đó và 'nhớ' 1 đơn vị sang hàng kế tiếp. - Cộng hàng tiếp theo với số 'nhớ'.'. Ví dụ: 57 + 68 = 125 (tổng các chữ số hàng đơn vị là 7 + 8 = 15, ghi 5 nhớ 1; tổng các chữ số hàng chục là 5 + 6 + 1 (số nhớ) = 12, ghi 2 nhớ 1; cuối cùng ghi số nhớ 1 vào hàng trăm)."
+    },
+    {
+        "input": "Quy tắc: Trừ không mượn.",
+        "output": "Phép trừ không mượn là phép trừ mà ở mỗi hàng, số bị trừ lớn hơn hoặc bằng số trừ, nên không cần 'mượn' từ hàng cao hơn. Quy tắc thực hiện: 'Trừ từng hàng từ phải sang trái (bắt đầu từ hàng đơn vị). Nếu số bị trừ lớn hơn hoặc bằng số trừ thì thực hiện phép trừ bình thường và ghi kết quả ngay tại hàng đó. Không cần mượn từ hàng kế tiếp.'. Ví dụ: 84 - 32 = 52 (ở hàng đơn vị: 4 - 2 = 2; ở hàng chục: 8 - 3 = 5)."
+    },
+    {
+        "input": "Quy tắc: Trừ có mượn.",
+        "output": "Phép trừ có nhớ là phép trừ mà ở một hàng nào đó, số bị trừ nhỏ hơn số trừ, phải 'mượn' 1 đơn vị từ hàng cao hơn để thực hiện phép trừ. Quy tắc thực hiện: 'Trừ từng hàng từ phải sang trái (bắt đầu từ hàng đơn vị). Nếu số bị trừ nhỏ hơn số trừ thì mượn 1 đơn vị từ hàng kế tiếp bên trái, giảm số ở hàng đó đi 1 và thêm 10 vào số bị trừ hiện tại. Sau đó thực hiện phép trừ bình thường và ghi kết quả tại hàng đó.'. Ví dụ: 53 - 27 = 26 (ở hàng đơn vị: 3 < 7, mượn 1 chục từ hàng chục, 5 - 1 = 4, thêm 10 vào hàng đơn vị: 3 + 10 = 13; sau đó 13 - 7 = 6; ở hàng chục: 4 - 2 = 2)."
+    },
+    {
+        "input": "Quy tắc: Bảng đổi đơn vị đo độ dài, khối lượng, diện tích.",
+        "output": "1km = 10hm, 1hm = 10dam, 1dam = 10m, 1m = 10dm, 1dm = 10cm, 1cm = 10mm. 1tấn = 10yến, 1yến = 10kg, 1kg = 10hg, 1hg = 10dag, 1dag = 10g. 1km² = 100ha, 1ha = 10000m², 1m² = 100dm², 1dm² = 100cm²."
+    },
+    {
+        "input": "Quy tắc: Tính giá tri biểu thức.",
+        "output": "Nguyên tắc chung là trong ngoặc đơn '()' tính trước, ngoài ngoặc đơn tính sau theo thứ tự nhân chia trước cộng trừ sau, tính từ trái sang phải. Hai cặp phép tính nhân - chia và cộng - trừ được xem xét ngang nhau. Nghĩa là từ trái sang phải gặp phép tính nào trước thì làm phép tính đó trước."
+    },
+    {
+        "input": "Quy tắc: Trung bình cộng.",
+        "output": "Muốn tính trung bình cộng của nhiều số ta lấy tổng các số đó chia cho số các số hạng. Muốn tính tổng các số đó ta lấy trung bình cộng của chúng nhân với số các số hạng. Trung bình cộng của dãy số cách đều chính là trung bình cộng của số đầu và số cuối. Nếu dãy số có số lẻ số hạng thì trung bình cộng chính là số ở giữa."
+    },
+    {
+        "input": "Ví dụ: Tính trung bình cộng của các số 4, 6, 8, 10, 12.",
+        "output": "Tổng các số hạng là: 4 + 6 + 8 + 10 + 12 = 40. Số các số hạng là: 5. Vậy trung bình cộng của các số là: 40 : 5 = 8. Cách khác: Trung bình cộng của dãy số cách đều là trung bình cộng của số đầu và số cuối: (4 + 12) : 2 = 8."
+    },
+    {
+        "input": "Quy tắc: Tìm hai số khi biết tổng và hiệu.",
+        "output": "Số bé = (Tổng - Hiệu) : 2. Số lớn = (Tổng + Hiệu) : 2."
+    },
+    {
+        "input": "Công thức: Hình vuông.",
+        "output": "Định nghĩa: 'Hình vuông là tứ giác có bốn cạnh bằng nhau và bốn góc vuông.'. Chu vi: P = a x 4 (P: chu vi). Diện tích: S = a x a (S: diện tích). Cạnh: a = P : 4 (a: cạnh)."
+    },
+    {
+        "input": "Công thức: Hình chữ nhật.",
+        "output": "Định nghĩa: 'Hình chữ nhật là tứ giác có bốn góc vuông và hai cặp cạnh đối song song và bằng nhau.'. Chu vi: P = (a + b) x 2 (P: chu vi). Diện tích: S = a x b (S: diện tích). Chiều dài: a = (P : 2) - b (a: chiều dài). Chiều rộng: b = (P : 2) - a (b: chiều rộng)."
+    },
+    {
+        "input": "Công thức: Hình bình hành.",
+        "output": "Định nghĩa: 'Hình bình hành là tứ giác có hai cặp cạnh đối song song và bằng nhau.'. Chu vi: P = (a + b) x 2 (P: chu vi). Diện tích: S = a x h (S: diện tích, h: chiều cao). Cạnh đáy: a = S : h (a: cạnh đáy). Chiều cao: h = S : a."
+    },
+    {
+        "input": "Công thức: Hình thoi",
+        "output": "Định nghĩa: 'Hình thoi là tứ giác có bốn cạnh bằng nhau và hai đường chéo vuông góc với nhau.'. Chu vi: P = a x 4 (P: chu vi). Diện tích: S = (d1 x d2) : 2 (S: diện tích, d1 và d2 là độ dài hai đường chéo). Cạnh: a = P : 4 (a: cạnh)."
+    },
+    {
+        "input": "Công thức: Hình tam giác.",
+        "output": "Định nghĩa: 'Hình tam giác là đa giác có ba cạnh và ba góc.'. Chu vi: P = a + b + c (P: chu vi, a: cạnh thứ nhất, b: cạnh thứ hai, c: cạnh thứ ba)). Diện tích: S = (a x h) : 2 (S: diện tích, h: chiều cao tương ứng với cạnh đáy a). Cạnh đáy: a = (2 x S) : h (a: cạnh đáy). Chiều cao: h = (2 x S) : a."
+    },
+    {
+        "input": "Công thức: Hình thang.",
+        "output": "Định nghĩa: 'Hình thang là tứ giác có một cặp cạnh đối song song.'. Chu vi: P = a + b + c + d (P: chu vi, a và c là hai cạnh đáy, b và d là hai cạnh bên). Diện tích: S = ((a + c) x h) : 2 (S: diện tích, h: chiều cao). Cạnh đáy: a + c = (2 x S) : h. Chiều cao: h = (2 x S) : (a + c)."
+    },
+    {
+        "input": "Công thức: Hình tròn.",
+        "output": "Định nghĩa: 'Hình tròn là tập hợp các điểm trong mặt phẳng cách đều một điểm cố định gọi là tâm một khoảng không đổi gọi là bán kính.'. Chu vi: C = 2 x 3.14 x r (C: chu vi, r: bán kính). Diện tích: S = 3.14 x r x r (S: diện tích). Bán kính: r = C : (2 x 3.14). Đường kính: d = 2 x r."
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "input": "Concept: Natural numbers.",
+        "output": "Definition: 'Natural numbers are the set of numbers greater than or equal to 0. They include numbers such as 0, 1, 2, 3, and continue indefinitely in the positive direction.'. To write natural numbers, people use 10 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, all digits are less than 10. 0 is the smallest natural number, there is no smallest natural number. The odd numbers with the unit digit are: 1, 3, 5, 7, 9. The series of odd numbers is: 1, 3, 5, 7, 9, 11, 13, 15, 17, ... The even numbers with the unit digit are: 0, 2, 4, 6, 8. The series of even numbers is: 2, 4, 6, 8, 10, 12, 14, 16, ... Two consecutive natural numbers are 1 unit different from each other. Two consecutive even (odd) numbers are 2 units different from each other. One-digit numbers (from 0 to 9) have 10 numbers. Two-digit numbers (from 10 to 99) have 90 numbers. Three-digit numbers (from 100 to 999) have 900 numbers. Four-digit numbers (from 1000 to 9999) have 9000 numbers... In a series of consecutive natural numbers, for every odd number there is an even number, then odd, then even, ... If a series of consecutive natural numbers starts with an odd number and ends with an even number, the number of terms in the series is an even number. If the start and end are 2 even (or odd) numbers, the number of terms in the series is an odd number."
+    },
+    {
+        "input": "Concept: Units, tens, hundreds.",
+        "output": "Definition: 'In the decimal system, each digit in a number has a value depending on its position. The units place is the rightmost position, the tens place is the second position from the right, and the hundreds place is the third position from the right.'. For example: 'In the number 345, the digit 5 ​​is in the units place, the digit 4 is in the tens place, and the digit 3 is in the hundreds place.'"
+    },
+    {
+        "input": "Operation: Addition.",
+        "output": "Symbol: '+'. Definition: 'a + b = c, where a and b are terms, c is the sum.'. Example: '3 + 6 = 9, 1 + 8 = 9' Property: '1) Commutative: a + b = b + a. 2) Associative: (a + b) + c = a + (b + c). 3) Property of 0: a + 0 = a.'"
+    },
+    {
+        "input": "Operation: Subtraction.",
+        "output": "Symbol: '-'. Definition: 'a - b = c, where a is the minuend, b is the subtrahend, c is the difference.'. Example: '9 - 4 = 5, 7 - 2 = 5' Property: '1) Non-commutative: a - b ≠ b - a. 2) Non-associative: (a - b) - c ≠ a - (b - c). 3) Property of 0: a - 0 = a.'"
+    },
+    {
+        "input": "Operation: Multiplication.",
+        "output": "Symbol: 'x'. Definition: 'a x b = c, where a and b are factors, c is the product.'. Example: '3 x 4 = 12, 5 x 6 = 30' Properties: '1) Commutative: a x b = b x a. 2) Associative: (a x b) x c = a x (b x c). 3) Property of number 1: a x 1 = a. 4) Distributive property: a x (b + c) = a x b + a x c.'"
+    },
+    {
+        "input": "Operation: Division.",
+        "output": "Symbol: ':'. Definition: 'a : b = c, where a is the dividend, b is the divisor (b ≠ 0), c is the quotient.'. Example: '12 : 4 = 3, 20 ÷ 5 = 4' Properties: '1) Non-commutative: a : b ≠ b : a. 2) Non-associative: (a : b) : c ≠ a : (b : c). 3) Property of number 1: a : 1 = a.'"
+    },
+    {
+        "input": "Rule: Divisibility.",
+        "output": "Divisible by 2: The unit digit is 0, 2, 4, 6, 8. Divisible by 3: The sum of the digits is divisible by 3. Divisible by 5: The unit digit is 0 or 5. Divisible by 9: The sum of the digits is divisible by 9. Divisible by 10: The unit digit is 0. Divisible by 4: The last two digits form a number divisible by 4. Divisible by 8: The last three digits form a number divisible by 8. Divisible by 6: Divisible by both 2 and 3."
+    },
+    {
+        "input": "Rule: Add without carrying.",
+        "output": "Add without carrying is an addition in which the sum of the digits in each row (units, tens,...) does not exceed 9, so there is no need to 'carry' to the next row. Implementation rule: 'Add each row from right to left (starting from the units). If the sum is less than or equal to 9, write the result right in that row. There is no need to move the number to the next row.'. For example: 23 + 45 = 68 (the sum of the units digits is 3 + 5 = 8, the sum of the tens digits is 2 + 4 = 6)."
+    },
+    {
+        "input": "Rule: Addition with carry.",
+        "output": "Addition with carry is an addition in which the sum of the digits in each row exceeds 9, and must 'carry' 1 unit to the next row. Implementation rule: 'Add each row from right to left (starting from the units). If the sum is greater than 9, write the units digit of the sum in that row and 'carry' 1 unit to the next row. - Add the next row with the 'carry' number.'. For example: 57 + 68 = 125 (the sum of the units digits is 7 + 8 = 15, write 5 and carry 1; the sum of the tens digits is 5 + 6 + 1 (carry number) = 12, write 2 and carry 1; finally, write the carried number 1 in the hundreds digit)."
+    },
+    {
+        "input": "Rule: Subtract without borrowing.",
+        "output": "Subtract without borrowing is a subtraction in which in each row, the number being subtracted is greater than or equal to the number being subtracted, so there is no need to 'borrow' from the higher row. Implementation rule: 'Subtract each row from right to left (starting from the units row). If the number being subtracted is greater than or equal to the number being subtracted, perform the subtraction normally and write the result right in that row. No need to borrow from the next row.'. For example: 84 - 32 = 52 (in the units row: 4 - 2 = 2; in the tens row: 8 - 3 = 5)."
+    },
+    {
+        "input": "Rule: Subtract with borrowing.",
+        "output": "Subtraction with carrying is a subtraction in which, in a certain row, the number to be subtracted is smaller than the number to be subtracted, so you have to 'borrow' 1 unit from the higher row to perform the subtraction. Implementation rule: 'Subtract each row from right to left (starting from the units row). If the number to be subtracted is smaller than the number to be subtracted, borrow 1 unit from the next row to the left, reduce the number in that row by 1 and add 10 to the current number to be subtracted. Then perform the subtraction normally and write the result in that row.'. For example: 53 - 27 = 26 (in the units row: 3 < 7, borrow 1 ten from the tens row, 5 - 1 = 4, add 10 to the units row: 3 + 10 = 13; then 13 - 7 = 6; in the tens row: 4 - 2 = 2)."
+    },
+    {
+        "input": "Rule: Table to convert units of length, mass, area.",
+        "output": "1km = 10hm, 1hm = 10dam, 1dam = 10m, 1m = 10dm, 1dm = 10cm, 1cm = 10mm. 1 ton = 10yen, 1yen = 10kg, 1kg = 10hg, 1hg = 10dag, 1dag = 10g. 1km² = 100ha, 1ha = 10000m², 1m² = 100dm², 1dm² = 100cm²."
+    },
+    {
+        "input": "Rule: Calculate the value of the expression.",
+        "output": "The general principle is that the calculation inside the parentheses '()' is done first, outside the parentheses, in the order of multiplication and division first, addition and subtraction later, calculated from left to right. The two pairs of multiplication - division and addition - subtraction are considered equal. That is, from left to right, whichever calculation comes first, do that calculation first."
+    },
+    {
+        "input": "Rule: Average.",
+        "output": "To calculate the average of many numbers, we take the sum of those numbers and divide it by the number of terms. To calculate the sum of those numbers, we take their average and multiply it by the number of terms. The average of an equidistant series of numbers is the average of the first and last numbers. If the series has an odd number of terms, the average is the middle number."
+    },
+    {
+        "input": "Example: Calculate the average of the numbers 4, 6, 8, 10, 12.",
+        "output": "The sum of the terms is: 4 + 6 + 8 + 10 + 12 = 40. The number of terms is: 5. So the average of the numbers is: 40 : 5 = 8. Another way: The average of an equidistant series is the average of the first and last numbers: (4 + 12) : 2 = 8."
+    },
+    {
+        "input": "Rule: Find two numbers when given sum and difference.",
+        "output": "Smaller number = (Sum - Difference) : 2. Larger number = (Sum + Difference) : 2."
+    },
+    {
+        "input": "Formula: Square.",
+        "output": "Definition: 'A square is a quadrilateral with four equal sides and four right angles.'. Perimeter: P = a x 4 (P: perimeter). Area: S = a x a (S: area). Side: a = P : 4 (a: side)."
+    },
+    {
+        "input": "Formula: Rectangle.",
+        "output": "Definition: 'A rectangle is a quadrilateral with four right angles and two pairs of opposite sides parallel and equal.'. Perimeter: P = (a + b) x 2 (P: perimeter). Area: S = a x b (S: area). Length: a = (P : 2) - b (a: length). Width: b = (P : 2) - a (b: width)."
+    },
+    {
+        "input": "Formula: Parallelogram.",
+        "output": "Definition: 'A parallelogram is a quadrilateral with two pairs of opposite sides parallel and equal.'. Perimeter: P = (a + b) x 2 (P: perimeter). Area: S = a x h (S: area, h: height). Base: a = S : h (a: base). Height: h = S : a."
+    },
+    {
+        "input": "Formula: Rhombus",
+        "output": "Definition: 'A rhombus is a quadrilateral with four equal sides and two diagonals perpendicular to each other.'. Perimeter: P = a x 4 (P: perimeter). Area: S = (d1 x d2) : 2 (S: area, d1 and d2 are the lengths of the two diagonals). Side: a = P : 4 (a: side)."
+    },
+    {
+        "input": "Formula: Triangle.",
+        "output": "Definition: 'A triangle is a polygon with three sides and three angles.'. Perimeter: P = a + b + c (P: perimeter, a: first side, b: second side, c: third side)). Area: S = (a x h) : 2 (S: area, h: height corresponding to base a). Base: a = (2 x S) : h (a: base). Height: h = (2 x S) : a."
+    },
+    {
+        "input": "Formula: Trapezoid.",
+        "output": "Definition: 'A trapezoid is a quadrilateral with one pair of opposite sides parallel.'. Perimeter: P = a + b + c + d (P: perimeter, a and c are the two bases, b and d are the two sides). Area: S = ((a + c) x h) : 2 (S: area, h: height). Base: a + c = (2 x S) : h. Height: h = (2 x S) : (a + c)."
+    },
+    {
+        "input": "Formula: Circle.",
+        "output": "Definition: 'A circle is a set of points in a plane equidistant from a fixed point called the center by a constant distance called the radius.'. Circumference: C = 2 x 3.14 x r (C: circumference, r: radius). Area: S = 3.14 x r x r (S: area). Radius: r = C : (2 x 3.14). Diameter: d = 2 x r."
+    }
+]
